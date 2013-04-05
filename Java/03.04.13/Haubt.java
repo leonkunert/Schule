@@ -76,7 +76,7 @@ public class Haubt{
 		System.out.println(gesamt6);
 		//Aufgabe 4 
 		//For
-		long fak = 1;
+		double fak = 1;
 		for (int d=1; d<=40; d++) {
 			fak = fak*d;
 		}
