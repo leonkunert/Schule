@@ -6,7 +6,7 @@ public class Ifelse{
 		if((a-79)== b){
 			System.out.println("a-79=b");
 		}else{
-			System.out.println("a-79<>b");
+			System.out.p
 		}
 	}
 }
