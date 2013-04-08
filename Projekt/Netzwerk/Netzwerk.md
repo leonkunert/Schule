@@ -1,0 +1,2 @@
+# Netzwerktypen #
+Für Glasfaser 
