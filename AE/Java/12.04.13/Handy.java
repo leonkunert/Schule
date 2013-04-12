@@ -1,11 +1,19 @@
 public class Handy{
 
 	public static void main(String[] args) {
-		int min = 400; //Gespraechsminuten
-		double bill= 22.98;
-		if(min>30){
-			bill = (bill+(0.24*(min-30)));
+		int min = 221203; //Gespraechsminuten
+		double basic_bill= 22.98;
+		double bill = 0;
+		int inc_min = 30;
+		double price_min = 0.24;
+		if(min>inc_min){
+			bill = (bill+(price_min*(min-inc_min)));
 		}
-		System.out.println("Ihre Rechnung betraegt:" +bill);
+
+		System.out.println("Ihre Rechnung betraegt: ");
+		System.out.println(basic_bill);
+		System.out.println("+"+bill);
+		System.out.println("-------------------------");
+		System.out.println((basic_bill+bill));
 	}
 }
