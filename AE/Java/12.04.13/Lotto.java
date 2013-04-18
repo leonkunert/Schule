@@ -49,11 +49,11 @@ public class Lotto{
 				long endTime = System.nanoTime();
 				System.out.println("Took "+((endTime - startTime)/1000000000) + " s"); 
 			}
-			if((games_played % 1000000000)==0){
+			/*if((games_played % 1000000000)==0){
 				System.out.println(games_played);
 				long endTime = System.nanoTime();
 				System.out.println("Took "+((endTime - startTime)/1000000000) + " s"); 
-			}
+			}*/
 			for(int i = 0; i< lotto_numbers.length; i++){
 				lotto_numbers[i]= (int) (Math.random()*(42)+1);
 			}
