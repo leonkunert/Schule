@@ -1,0 +1,3 @@
+# Schwachstellenanalyse #
+
+Eine der größten Schwachstellen ist, dass Kunden durchschnittlich 24 Tage auf einen Beratungstermin warten und sich für den Kunden der Prozess in die Länge zieht. Dies ist auf die verzögerte Terminvereinbarung durch den KEB zurückzuführen. Auch die betriebsinternen Prüfungen nehmen deutlich zu viel Zeit in Anspruch. Eine Bonitätsprüfung ist mit heutigen Mitteln in wenigen Stunden möglich. Auch die  Lieferfähigkeitsprüfung kostet momentan zuviel Zeit. 
