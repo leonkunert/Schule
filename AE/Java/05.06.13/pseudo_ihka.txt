@@ -1,0 +1,9 @@
+Die funktion generatecode hat zwei parameter 
+	1. die Kundennummer kdnr
+	2. das Auftragsdatum date
+Zuerst hole ich mit mit getHerkunft(kdnr) die Herkunft des Kunden. Die Rückgabe dieser funktion speichere ich in der Variable herkunft.
+Mit der Funktion getKWJahr(date) hole ich mir die Kalenderwoche und das Jahr nach dem Datum, die Rückgabe speichere ich in der Variable kw. 
+Für die Ziffernfolge hole ich mir den ersten Buchstabe der Länderkennung mit substring(0, 1) die mir den ersten Buchstabe von der Länderkennung zurückgibt. Diesen speichere ich in der Variable erster. Dies wiederhole ich für die Zwei folgenden mit substring(1, 2) und substring(2, 3) die Ergebnisse speichere ich in zweiter und dritter. Mit toASCII(erster) hole ich mir den ASCII-Code zum Buchstaben. Die rückgabe speichere ich in ascii1. Auch diesen Vorgang wiederhole ich für die zwei folgenden Buchstaben. Jetzt spalte ich kw in ww und yyyy mit substring(0, 2) und substring(3, 6) auf;
+In die Variable result gebe ich das Ergebnis aus.
+Ich rechne ascii1 mal 91 plus ascii2. Das mal 91 plus ascii3. Das nehme ich wiederum und multipliziere es mit 54 addiere ww dazu und multipliziere das Ganze wieder mit 2300 und addiere noch einmal yyyy dazu.
+Das Gesamt Ergebnis result returne ich. 
