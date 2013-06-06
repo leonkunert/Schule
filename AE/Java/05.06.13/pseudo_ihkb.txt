@@ -1,0 +1,29 @@
+Funktion getLand(code:long):String
+	char: erster, zweiter, dritter,
+	int: jahr,
+	int: kw,
+	String: result
+
+	jahr = code modulo 2300,
+	code = code - jahr,
+	code = code/2300,
+
+	kw = code modulo 54,
+	code = code - kw,
+	code = code /54,
+
+	erster = (char)(code modulo 91)
+	code = code - code modulo 91,
+	code = code/91,
+
+	zweiter = (char)(code modulo 91)
+	code = code - code modulo 91,
+	code = code/91,
+
+	dritter = (char)(code modulo 91)
+	code = code - code modulo 91,
+	code = code/91,
+
+	result = erster + zweiter + dritter,
+
+	Rückgabe result.
