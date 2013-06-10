@@ -1,9 +1,9 @@
 import java.util.Scanner;
 
-public class Lotto {
+public class lotto {
 
 	/**
-	 * @autor Leon Kunert
+	 * @author Leon Kunert
 	 * @param args
 	 */
 	public static void main(String[] args) {
@@ -11,25 +11,41 @@ public class Lotto {
 		int user_numbers[] = new int[6];
 		Scanner scan = new Scanner(System.in);
 		boolean notwon = true;
+		//temporary variable to save keyboard inputs
+		int temp;
+		//saves the number of games
+		int times_played = 0;
 		//filling the Array user_numbers with numbers
+		System.out.println("Ihre Zahlen Bitte.");
 		for(int i =0; i<user_numbers.length; i++){
-			user_numbers[i] = scan.nextInt();
-			System.out.println("Nächste Zahl bitte.");
-			if(user_numbers[i] > 49){
+			temp = scan.nextInt();
+			if(temp > 49){
 				i--;
 				System.out.println("Bitte nur Zahlen bis 49.");
-				user_numbers[i] = scan.nextInt();
+				temp = scan.nextInt();
 			}
+			//Catches if someone tries to use one number twice
+			for(int user_number:user_numbers){
+				if(user_number == temp){
+					i--;
+					System.out.println("Bitte nicht eine Zahl doppelt ankreuzen.");
+				}
+			}
+			user_numbers[i] = temp;
+			System.out.println("Nächste Zahl bitte.");
 		}
 		scan.close();
+		user_numbers = sortArray(user_numbers);
 		System.out.println("Ihre Lottozahlen lauten: ");
 		for (int user_number:user_numbers){
 			System.out.print(user_number+", ");
 		}
 		while(notwon){
 			int[] lotto_numbers = generateNumbers(6);
+			times_played++;
 			if(checkWon(user_numbers, lotto_numbers)){
-				
+				notwon = false;
+				System.out.println("Herzlichen Grückwunsch sie haben gewonnen!! Nach "+ times_played + " Spielen und "+ (times_played/2) + " Wochen. Der Spaß hätte sie " + (times_played*5) + " Euro gekostet.");
 			}
 		}
 	}
