@@ -1,0 +1,7 @@
+import java.util.ArrayList;
+
+
+public class Zentrale {
+	private float tagges;
+	private ArrayList<Supermarkt> supermaerkte;
+}

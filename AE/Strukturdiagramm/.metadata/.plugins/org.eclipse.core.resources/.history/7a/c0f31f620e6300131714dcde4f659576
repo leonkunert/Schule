@@ -1,0 +1,6 @@
+
+public class Supermarkt {
+	private String name;
+	private float tageseinnahme;
+	
+}

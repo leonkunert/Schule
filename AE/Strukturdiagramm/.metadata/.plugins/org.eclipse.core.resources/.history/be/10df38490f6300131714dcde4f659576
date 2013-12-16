@@ -1,0 +1,7 @@
+
+public class Kasse {
+	private String bez;
+	private float einlage;
+	private float kassenstand;
+	private Supermarkt supermarkt;
+}

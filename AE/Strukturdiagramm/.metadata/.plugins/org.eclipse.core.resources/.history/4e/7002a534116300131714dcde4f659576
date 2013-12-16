@@ -1,0 +1,42 @@
+
+public class Kasse {
+	private String bez;
+	private float einlage;
+	private float kassenstand;
+	private Supermarkt supermarkt;
+	
+	public String getBez() {
+		return bez;
+	}
+	public void setBez(String bez) {
+		this.bez = bez;
+	}
+	public float getEinlage() {
+		return einlage;
+	}
+	public void setEinlage(float einlage) {
+		this.einlage = einlage;
+	}
+	public float getKassenstand() {
+		return kassenstand;
+	}
+	public void setKassenstand(float kassenstand) {
+		this.kassenstand = kassenstand;
+	}
+	public Supermarkt getSupermarkt() {
+		return supermarkt;
+	}
+	public Kasse(String bez, Supermarkt supermarkt) {
+		super();
+		this.bez = bez;
+		this.supermarkt = supermarkt;
+	}
+	public void setSupermarkt(Supermarkt supermarkt) {
+		this.supermarkt = supermarkt;
+	}
+	
+	//Tageseinnahmen berechnen
+	public float tageinges(){
+		return this.kassenstand - this.einlage;
+	}
+}

@@ -1,0 +1,14 @@
+
+public class main {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		Zentrale z = new Zentrale();
+		Supermarkt s = new Supermarkt("SuperSupermarktSuper",z);
+		Kasse k	= new Kasse("Kasse1",s);
+
+	}
+
+}

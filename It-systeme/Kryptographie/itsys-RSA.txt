@@ -1,0 +1,48 @@
+Zweck     	(Wozu dient das Kryptoverfahren? Was ermöglicht das Verfahren?) 
+Aufbau    	(Wie ist das System prinzipiell aufgebaut? Was sind grundlegende Aspekte?)  
+Beispiel     	(Ein praktisches Beispiel, das die Anwendung an einem einfachen Beispiel zeigt) 
+Anwendung   	(Wo wird oder wurde dieses Verfahren real eingesetzt?) 
+Sicherheit   	(Wie sicher ist das Verfahren? Was sind Schwachstellen? Gibt es erfolgreiche Angriffe?) 
+
+1.
+asymmetrisches kryptographisches Verfahren
+Verschlüsselung als auch digitale Signatur 
+Einwegfunktionen
+private Schlüssel(Falltür) wird geheim gehalten und kann nur mit extrem hohem Aufwand aus dem öffentlichen Schlüssel berechnet werden
+beispiel: 5*6 ist leicht zu berechnen, aber von 30 auf 5 zu schließen, ohne die Information 6 (Falltür)
+
+
+2.
+Schlüsselpaar
+	privaten Schlüssel zum Entschlüsseln oder Signieren
+	öffentlichen Schlüssel, mit dem man verschlüsselt oder Signaturen prüft.
+
+--> TODO:
+	Formeln genau und Rechung
+
+3.
+
+4.
+    Internet- und Telefonie-Infrastruktur: X.509-Zertifikate
+    Übertragungs-Protokolle: IPSec, TLS, SSH, WASTE
+    E-Mail-Verschlüsselung: PGP, S/MIME
+    Authentifizierung französischer Telefonkarten
+    Kartenzahlung: EMV
+    RFID Chip auf dem deutschen Reisepass
+    Electronic Banking: HBCI
+
+
+5.
+Die erste Möglichkeit ergibt sich durch das Faktorisieren von n in die beiden Primzahlen p und q, da mit p, q und e (der geheime Schlüssel d) berechnet werden kann.
+Für dieses Problem ist keine hinreichend schnelle mathematische Möglichkeit bekannt.
+
+Attacke beim Austausch des öffentlichen Schlüssels:
+Wenn ein Anwender X den Anwendern A, B beim Schlüsseltausch vorspielt jeweils der andere zu sein, und beiden seinen öffentlichen Schlüssel zuspielt, so kann er ihre Nachrichten lesen.
+
+Zur Lösung dieses Problems, der Vorspiegelung falscher Tatsachen, wurden sogenannte Certification Authorities gegründet, welche garantieren, dass ein öffentlicher Schlüssel B0 den A von B anfordert auch tatsächtlich der öffentliche Schlüssel von B ist.
+Eine weitere Möglichkeit zur Lösung dieses Problems der Schlüssel-Authorities wäre, einen sogenannten Fingerprint des öffentlichen Schlüssels über einen sicheren Kanal auszutauschen, wie zum Beispiel das Telefon.
+
+Die Sicherheit des Verfahrens basiert auf dem Problem, dass eine große, ganze Zahl in ihre Primfaktoren zerlegt werden muß, dies bedeutet, dass die Schlüssellänge nicht zu klein gewählt werden darf.
+Ein Schlüssel der Länge 512 Bit, der zu Zeit noch als Standard-Sicherheit gilt, wurde in nur 3 Tagen geknackt. Es sollte also mindestens eine Schlüssellänge von 1024 Bit (Militär-Standard) oder noch besser 2048 Bit gewählt werden. 
+
+--> Das heißt: Je größer die Primzahl desto unverhälnissmäßiger wird der Zeitaufwand 

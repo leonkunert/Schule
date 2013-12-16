@@ -1,0 +1,9 @@
+import java.util.ArrayList;
+
+
+public class Supermarkt {
+	private String name;
+	private float tageseinnahme;
+	private Zentrale zentrale;
+	private ArrayList<Kasse> kassen;
+}
