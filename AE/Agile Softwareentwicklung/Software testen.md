@@ -1,4 +1,4 @@
-# Software testen #
+ # Software testen #
 
 ## Was versteht man unter einem Softwaretest? ##
 
@@ -34,5 +34,5 @@ Mischung von Black- und White-Box-Test bei der über die Spezifikation getestet 
 ## Erläutern Sie die Unterschiede zwischen "dummys", "stubs", "fakes" und "mocks". ##
 Mit *Dummys* testet man Attribute und Methoden Parameter.
 *Stubs* haben die gleichen Eigenschaften wie die Objekte für die sie stehen sie geben außerdem die Parameter weiter.
-*Fakes* ersetzen Komponenten durch eine schneller Variante von ihnen. Sie sollten nur bestimmte Eigenschaften haben.
+*Fakes* ersetzen Komponenten durch eine schnelle, stark vereinfachte Variante von ihnen. Sie sollten nur bestimmte Eigenschaften haben.
 Mit *Mocks* kann man Inputs und Outputs von Einzelnen Objekten verifizieren und aufzeichnen.

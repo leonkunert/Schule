@@ -6,10 +6,13 @@ Es ist Open-Source. Besteht aus einem Test-runner und bietet Assertations und An
 ## Was Ist Ein JUnit TestCase? ##
 Ein Test Case ist ein Teil eines JUnit tests, der aus mehreren Tests bestehen kann, aber eine Funktionalität testet.
 ## Wie erzeugt man einen JUnit TestCase mit Eclipse? ##
-
-## Wie führt man einen TestCase in Eclipse aus und welches Ergebnis erhält man? ##
-## Was versteht man unter einem Regressions- Testframework? ##
-## Was versteht man unter einer Testsuite? ##
+Man Klickt mit der rechten Maustaste auf das Projekt und wählt, neue JUnit Klasse. Das erzeugt einen neuen JUnit Test.
+## Wie Führt Man Einen TestCase in Eclipse Aus Und Welches Ergebnis Erhält Man? ##
+Um einen Test laufen zu lassen, klickt man auf RUN. Genauso, wie man ein Programm laufen lässt.
+## Was Versteht Man Unter Einem Regressions- Testframework? ##
+Ein Regressions-Test soll gewährleisten, dass eine Änderung an einem Programm keine Fehler hat, die bereits getestet worden sind.
+## Was Versteht Man Unter Einer Testsuite? ##
+Eine Testsuite ist eine Sammlung von Tests um ein Programm zu testen.
 ## Nennen Sie Die Wichtigsten Assertions Und Ihre Bedeutung/Verwendung. ##
 AssertEquals(Var1, Var2) testet ob Var1 gleich Var2 ist.
 AssertTrue(Var) testet ob Var Wahr ist.
