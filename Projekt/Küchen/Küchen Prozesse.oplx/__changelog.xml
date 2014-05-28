@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<changelog xmlns="http://www.omnigroup.com/namespace/OmniPlan/v2">
+  <version>2.0</version>
+  <task-change-set user="Leon Kunert" date="2013-06-03T12:14:03.968Z" timestamp="2013-06-03T12:14:03.968Z">
+    <change idref="t-1" attribute="criticalPathProperties" type="dict" from="{
+    color =     {
+        b = &quot;0.5&quot;;
+        g = &quot;0.5&quot;;
+        r = 1;
+    };
+    enabled = 0;
+    root = &quot;-1&quot;;
+}" to="{
+    color =     {
+        b = &quot;0.5&quot;;
+        g = &quot;0.5&quot;;
+        r = 1;
+    };
+    enabled = 1;
+    root = &quot;-1&quot;;
+}" resolved="yes"/>
+    <change idref="t1" from="t-1" from-position="0" resolved="yes">
+      <change idref="t1" attribute="title" type="string" to="Task 1"/>
+    </change>
+    <change idref="t3" to="t-1" to-position="0" resolved="yes">
+      <change idref="t3" attribute="effort" type="real" from="28800" to="691200"/>
+      <change idref="t3" attribute="startConstraintDate" type="date" to="2013-06-03T08:45:00.000Z"/>
+      <change idref="t3" attribute="title" type="string" to="KEB Meldet sich bei Kunde"/>
+    </change>
+    <change idref="t4" to="t-1" to-position="1" resolved="yes">
+      <change idref="t4" attribute="effort" type="real" from="28800" to="115200"/>
+      <change idref="t4" attribute="internalPrerequisitesString" type="string" to="3FS"/>
+      <change idref="t4" attribute="startConstraintDate" type="date" to="2013-07-04T14:15:00.000Z"/>
+      <change idref="t4" attribute="title" type="string" to="Angebotserstellung"/>
+    </change>
+    <change idref="t5" to="t-1" to-position="2" resolved="yes">
+      <change idref="t5" attribute="effort" type="real" from="28800" to="518400"/>
+      <change idref="t5" attribute="internalPrerequisitesString" type="string" to="4FS"/>
+      <change idref="t5" attribute="startConstraintDate" type="date" to="2013-07-10T14:30:00.000Z"/>
+      <change idref="t5" attribute="title" type="string" to="Betriebsinternen Prüfungs- und Verwaltungsaktivitäten"/>
+    </change>
+    <change idref="t6" to="t-1" to-position="3" resolved="yes">
+      <change idref="t6" attribute="effort" type="real" from="28800" to="1180800"/>
+      <change idref="t6" attribute="internalPrerequisitesString" type="string" to="5FS"/>
+      <change idref="t6" attribute="startConstraintDate" type="date" to="2013-08-06T08:15:00.000Z"/>
+      <change idref="t6" attribute="title" type="string" to="Produktion"/>
+    </change>
+    <change idref="t7" to="t-1" to-position="4" resolved="yes">
+      <change idref="t7" attribute="effort" type="real" from="28800" to="576000"/>
+      <change idref="t7" attribute="internalPrerequisitesString" type="string" to="6FS"/>
+      <change idref="t7" attribute="startConstraintDate" type="date" to="2013-10-02T07:15:00.000Z"/>
+      <change idref="t7" attribute="title" type="string" to="Auslieferung und Aufstellung"/>
+    </change>
+  </task-change-set>
+  <metadata-change-set user="Leon Kunert" date="2013-06-03T09:49:05.507Z" timestamp="2013-06-03T09:49:05.507Z">
+    <change idref="m1" attribute="fixedDate" type="date" from="2007-01-01T20:00:00.000Z" to="2013-06-03T06:00:00.000Z" resolved="yes"/>
+  </metadata-change-set>
+</changelog>
